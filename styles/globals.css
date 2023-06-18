@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+input:checked ~ .dot {
+ transform: translateX(100%);
+ background-color: #48bb78;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dropdown-menu  .dropdown-item{
+  display: none;
+}
+.dropdown-menu:hover  .dropdown-item{
+  display: block;
+}
+
+.lobster{
+  font-family:"Lobster"
+}
+table  {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 5px;
+  width: 100%;
+}
+table tr th,
+table tr td
+{
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr th{
+  font-weight: bold;
+}
+ol{
+  list-style-type: decimal;
+  margin-left:20px;
+}
